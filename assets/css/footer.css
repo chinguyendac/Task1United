@@ -88,4 +88,8 @@
     .social i:first-child {
         padding-left: 0;
     }
+    .copy-text{
+        display: block;
+        width: 100%;
+    }
 }
