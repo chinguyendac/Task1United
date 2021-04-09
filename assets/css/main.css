@@ -127,17 +127,29 @@ html{
 
 .follow__bg {
     width: 100%;
-    background:linear-gradient(to bottom,var(--grey-color-new), var(--grey-color-new) 30%,	white, white 30%);
+    background:linear-gradient(to bottom,var(--grey-color-new), var(--grey-color-new) 350px,	white, white 350px);
+}
+
+#input-plus-checkbox {
+    display: none;
+}
+
+#input-plus-checkbox:checked ~ .follow__grid{
+    max-height: max-content;
 }
 
 .follow__grid {
     display: grid;
-    grid-template-rows: 40% 40% 0%;
+    grid-template-rows: 300px 300px 300px;
     grid-template-columns: 30% 30% 30%;
     grid-gap: 20px;
     grid-row-gap: 20px;
     justify-content: center;
-    align-content: center;
+    /* align-content: center; */
+    overflow: hidden;
+    min-height: 600px;
+    max-height: 600px;
+    transition: linear 2s;
 }
 
 .follow__grid-link {
@@ -176,6 +188,14 @@ html{
     grid-area: 2 / 3 / 3 / 4;
 }
 
+.follow__grid-item7 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.follow__grid-item8 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
 .follow__grid-img {
     width: 100%;
     height: 100%;
@@ -188,13 +208,16 @@ html{
 
 .follow__plus-link:hover {
     color: #e83e8c;
+    cursor: pointer;
 }
 
 .follow__plus {
     text-align: center;
-    margin-bottom: 60px;
+    margin: 50px 0;
     font-size: 4rem;
 }
+
+
 
 .follow-item__link {
     color: #000;
@@ -232,9 +255,15 @@ html{
 }
 
 @media screen and (max-width: 768px) {
+    .follow__bg {
+        background:linear-gradient(to bottom,var(--grey-color-new), var(--grey-color-new) 300px,	white, white 300px);
+    }
+
     .follow__grid {
         grid-template-columns: 40% 40%;
-        grid-template-rows: 30% 30% 30%;
+        grid-template-rows: 250px 250px 250px 250px;
+        min-height: 500px;
+        max-height: 500px;
     }
     .follow__grid-item1 {
         grid-area: 1 / 1 / 2 / 2;
@@ -258,6 +287,13 @@ html{
     
     .follow__grid-item6 {
         grid-area: 3 / 2 / 4 / 3;
+    }
+    .follow__grid-item7 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    
+    .follow__grid-item8 {
+        grid-area: 4 / 2 / 5 / 3;
     }
     .follow-item:nth-child(2) {
         border-right: transparent;
