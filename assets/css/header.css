@@ -1,0 +1,55 @@
+.newColorPurple {
+    background-color: white;
+}
+
+.navbar-collapse--fix-grow {
+    flex-grow: unset;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+
+.nav-link {
+    color: black;
+    font-size: 1.6rem;
+}
+
+.nav-link:hover {
+    color: #e83e8c;
+}
+
+.text-logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn-toggle > .navbar-toggler-icon{
+    transform: translateY(-20%);
+}
+
+.navbar {
+    justify-content: space-around;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start !important;
+    }
+    .text-logo {
+        position: fixed;
+        top: 2.5%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-item {
+        margin-left: 5px;
+    }
+}
