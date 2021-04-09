@@ -41,6 +41,11 @@ html{
     font-family: 'Crimson Text', serif;
 }
 
+.btn.btn-light {
+    font-weight: 600;
+    border-radius: unset;
+}
+
 .btn.btn-light:hover {
     color: #e83e8c;
 }
@@ -142,8 +147,8 @@ html{
     display: grid;
     grid-template-rows: 300px 300px 300px;
     grid-template-columns: 30% 30% 30%;
-    grid-gap: 20px;
-    grid-row-gap: 20px;
+    grid-gap: 15px;
+    grid-row-gap: 15px;
     justify-content: center;
     /* align-content: center; */
     overflow: hidden;
@@ -263,6 +268,8 @@ html{
         grid-template-rows: 250px 250px 250px 250px;
         min-height: 500px;
         max-height: 500px;
+        grid-gap: 10px;
+        grid-row-gap: 10px;
     }
     .follow__grid-item1 {
         grid-area: 1 / 1 / 2 / 2;
